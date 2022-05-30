@@ -12,3 +12,7 @@ function cargarRegistrarUsuario(){
 function cargarLogin(){
     cargarElementoDinamicamente("login.jsp", document.getElementById("contenidoDinamico"));
 }
+
+function cargarTipo(){
+     cargarElementoDinamicamente("AgregarProducto.jsp", document.getElementById("contenidoDinamico"));
+}

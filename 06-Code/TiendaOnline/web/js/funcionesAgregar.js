@@ -1,4 +1,5 @@
-<html>
+
+<<html >
         <head>
         <title>Agregar Productos</title>
     </head>
@@ -71,3 +72,4 @@
    
     </body>
         </html>
+>

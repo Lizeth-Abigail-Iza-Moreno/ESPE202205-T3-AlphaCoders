@@ -11,7 +11,7 @@ function registrarUsuario(){
 }
 $.ajax({
     type:"POST",
-    url:url,
+    url: url,
     data: ('cedula':cedula,'nombre':nombre,'apellido':apellido,'usuario':usuario,
     'email':email,'contrasena':contrasena);
     success: function (response)

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Formulario de Registro</title>
+        <link rel="stylesheet" href="css/estilosLogin.css" type="text/css" media="all">
+    </head>
+    <body>
+        <div class="cuerpoFormulario1" id="cuerpoFormulario1"> 
+            <form class="formularioRegistro" id="formularioRegistro" method="post" action="controller/insertarProductos.php">
+                
+                <h1>Registro Productos</h1><br>
+                <fieldset>             
+                <label>Categoria:</label>
+                    <input type="text" class="txt" id="txtCategoria" required="" name="txtCategoria"><br>
+                <label>Nombre Producto:</label>
+                    <input type="text" class="txt" id="txtProducto" required="" name="txtproducto"><br>
+                <label>Talla:</label><br>
+                     <input type="number" class="txt" id="txtTalla" required=""  name="txtTalla"><br>
+                <label>Precio:</label><br>
+                    <input type="number" class="txt" id="txtPrecio" required="" name="txtPrecio"><br>
+                <label>stock:</label><br>
+                    <input type="number" class="txt" id="txtStock" required="" name="txtStock"><br>
+                </fieldset><br>
+                <input type="submit" value="Registrar Productos" class="btn" id="btnRegistrarProducto">
+            </form>
+        </div> 
+    </body>
+</html>

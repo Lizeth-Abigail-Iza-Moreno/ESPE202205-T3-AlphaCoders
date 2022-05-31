@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'],"/TiendaOnline/db/db.php";
+require_once $_SERVER['DOCUMENT_ROOT'],"/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/db/db.php";
 $cedula = $_POST['txtCedula'];
 $nombre = $_POST['txtNombre'];
 $apellido = $_POST['txtApellido'];

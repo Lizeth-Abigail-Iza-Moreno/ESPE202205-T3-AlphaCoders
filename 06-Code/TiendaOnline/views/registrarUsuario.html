@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Formulario de Registro</title>
+        <link rel="stylesheet" href="css/estilosLogin.css" type="text/css" media="all">
+    </head>
+    <body>
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="login.php">Iniciar Sesión</a></li>
+                <li> <a href="registrarUsuario.html">Registro de Usuarios</a></li>
+            </ul>
+        </nav>
+        <div class="cuerpoFormulario1" id="cuerpoFormulario1"> 
+            <form class="formularioRegistro" id="formularioRegistro" method="post" action="controller/registrarUsuario.php">
+                
+                <h1>Formulario de Registro</h1><br>
+                <fieldset>            
+                    <legend>Datos personales</legend>   
+                <label>Cédula:</label><br>
+                    <input type="text" class="txt" id="txtCedula" required="" name="txtCedula"><br>
+                <label>Nombres:</label>
+                     <input type="text" class="txt" id="txtNombre" required=""  name="txtNombre"><br>
+                <label>Apellidos:</label>
+                    <input type="text" class="txt" id="txtApellido" required="" name="txtApellidos"><br>
+                </fieldset><br>
+                <fieldset>   
+                <legend>Datos del Usuario</legend>
+                <label>Usuario:</label> <br>
+                    <input type="text" class="txt" id="txtUsuario" required="" name="txtUsuario"><br>
+                <label>Email:</label> <br>
+                    <input type="text" class="txt" id="txtEmail" required="" name="txtEmail"><br>
+                <label>Contraseña:</label> 
+                    <input type="password" class="txt" id="txtContrasena" required="" onkeyup="coincidirContrasena()"><br>
+                <label>Confirmar Contraseña:</label> 
+                <input type="password" class="txt" id="txtRepetirContrasena" required="" onkeyup="coincidirContrasena()" name="txtContrasena"><br>                      
+                </fieldset><br><br>                 
+                <input type="submit" value="Crear Usuario" class="btn" id="btnCrearUsuario">
+            </form>
+        </div>
+    </body>
+</html>
+

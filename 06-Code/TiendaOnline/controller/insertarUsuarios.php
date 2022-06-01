@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT'],"/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/db/db.php";
+require_once $_SERVER['DOCUMENT_ROOT']."/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/db/db.php";
 $cedula = $_POST['txtCedula'];
 $nombre = $_POST['txtNombre'];
 $apellido = $_POST['txtApellido'];
@@ -13,14 +13,14 @@ $obj=array{
     'apellido'=>$apellido,
     'usuario'=>$usuario,
     'email'=>$email,
-    'contrasena'=>$contrasena,
+    'contraseña'=>$contrasena,
 };
 $insert=new MongoDB\Driver\RulWrite();
 $insert->insert($obj);
-$result=$manager->executeDulWrite('gestionTiendaOnline.usuario',$insert);
+$result=$manager->executeRulWrite('TiendaOnline.persons',$insert);
 
 if($result->getinsertedcount()--1){
-    echo'registrado';
+    echo'Usuario registrado';
     }else{
-    echo'error';
+    echo'error de Registro';
 }

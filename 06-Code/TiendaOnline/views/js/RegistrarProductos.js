@@ -5,7 +5,7 @@ function registrarUsuario(){
     var precio=$('#txtPrecio').val;
     var stock=$('#txtstock').val;
 
-    var url="http://localhost/TiendaOnline/controller/insertarProductos.php"
+    var url="http://localhost/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/controller/insertarProductos.php"
 }
 $.ajax({
     type:"POST",

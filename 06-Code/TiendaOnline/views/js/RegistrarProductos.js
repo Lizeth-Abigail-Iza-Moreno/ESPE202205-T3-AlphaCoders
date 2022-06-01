@@ -10,10 +10,10 @@ function registrarUsuario(){
 $.ajax({
     type:"POST",
     url:url,
-    data: ('categoria': categoria,'NombreProducto':NombreProducto,'talla':talla,'precio':precio,'stock':stock,
+    data: {'categoria': categoria,'Nombre_Producto':Nombre_Producto,'Talla':Talla,'Precio':Precio,'Stock':Stock},
     success: function (response)
     {
-        if(response=='resgistado'){
+        if(response=='registrado'){
             $('anymodal').modal('show');          
         }else{
         alert('Error en el Registro');

@@ -3,13 +3,13 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Inicion de Sesión</title>
-        <link rel="stylesheet" href="views/css/estilosLogin.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/estilosLogin.css" type="text/css" media="all">
     </head>
     <body>
         <nav class="menu" id="menu">
             <ul>
                 <li><a href="login.php">Iniciar Sesión</a></li>
-                <li> <a href="views/registrarUsuario.html">Registro de Usuarios</a></li>              
+                <li> <a href="registrarUsuario.html">Registro de Usuarios</a></li>              
             </ul>
         </nav>
         <div class="cuerpoFormulario" id="cuerpoFormulario">

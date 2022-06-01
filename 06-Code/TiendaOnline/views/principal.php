@@ -8,16 +8,14 @@
     <body>
     <nav class="menu" id="menu">
             <ul>
+                <li> <a href="visualizarUsuarios.php">Usuarios</a></li>
                 <li><a href="insertarProductos.html">Registrar Nuevos Productos</a></li>
-                <li><a href="login.php">Salir</a></li>
-                <div>
-        
-    </div>             
+                <li><a href="login.php">Salir</a></li>                         
             </ul>
         </nav>
     </body>
 </html>
-<h1><center>PRODUCTOS INGRESADOS</center</h1><br><br>
+<h1><center>Productos Ingresados</center</h1><br><br>         
 <?php 
    
     require_once $_SERVER['DOCUMENT_ROOT']."/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/db/db.php";

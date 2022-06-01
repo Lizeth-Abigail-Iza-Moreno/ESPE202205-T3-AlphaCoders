@@ -11,13 +11,13 @@
                 <li><a href="Productos_cliente.php">Productos</a></li>
                 <li><a href="login.php">Salir</a></li>
                 <div>
-        
+                <h1><center>PRODUCTOS</center</h1><br><br>
     </div>             
             </ul>
         </nav>
     </body>
 </html>
-<h1><center>PRODUCTOS</center</h1><br><br>
+
 <?php 
    
     require_once $_SERVER['DOCUMENT_ROOT']."/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/db/db.php";

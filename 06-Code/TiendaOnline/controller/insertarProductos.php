@@ -1,17 +1,17 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT']."/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/db/db.php";
-$categoria = $_POST['txtCategoria'];
-$talla = $_POST['txtTalla'];
-$precio = $_POST['txtPrecio'];
-$stock = $_POST['txtStock'];
-$NombreProducto = $_POST['txtProducto'];
+$categoria = $_POST['categoria'];
+$talla = $_POST['Talla'];
+$precio = $_POST['Precio'];
+$stock = $_POST['Stock'];
+$NombreProducto = $_POST['Producto'];
 
 $obj=array{
     'categoria'=>$categoria,
-    "Nombre_Producto"=>$NombreProducto
+    "Nombre_Producto"=>$NombreProducto,
     'Talla'=>$talla,
     'Precio'=>$precio,
-    'Stock'=>$stock
+    'Stock'=>$stock,
 };
 $insert = new MongoDB\Driver\RulWrite();
 $insert->insert($obj);

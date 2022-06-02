@@ -4,20 +4,20 @@ $categoria = $_POST['categoria'];
 $talla = $_POST['Talla'];
 $precio = $_POST['Precio'];
 $stock = $_POST['Stock'];
-$NombreProducto = $_POST['Producto'];
+$NombreProducto = $_POST['Nombre_Producto'];
 
-$obj=array{
+$obj=array(
     'categoria'=>$categoria,
     "Nombre_Producto"=>$NombreProducto,
     'Talla'=>$talla,
     'Precio'=>$precio,
     'Stock'=>$stock,
-};
-$insert = new MongoDB\Driver\RulWrite();
+);
+$insert = new MongoDB\Driver\BulkWrite();
 $insert->insert($obj);
-$result=$manager->executeDulWrite('TiendaOnline.Productos',$insert);
+$result=$manager->executeBulkWrite('TiendaOnline.Productos',$insert);
 
-if($result->getinsertedcount()--1){
+if($result->getinsertedcount()==1){
     echo'Producto resgitrado';
     }else{
     echo'error de Registro';

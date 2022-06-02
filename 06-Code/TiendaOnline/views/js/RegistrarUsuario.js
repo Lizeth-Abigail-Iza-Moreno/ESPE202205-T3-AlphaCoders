@@ -1,11 +1,11 @@
 function registrarUsuario(){
     var cedula =$('#txtCedula').val();
     var nombre=$('#txtnombre').val();
-    var apellido=$('#txtApellido').val;
-    var Tipo_Usuario=$('#txtTipo_Usuario').val;
-    var usuario=$('#txtUsuario').val;
-    var email=$('#txtEmail').val;
-    var contrasena=$('#txtContrasena').val;
+    var apellido=$('#txtApellido').val();
+    var Tipo_Usuario=$('#txtTipo_Usuario').val();
+    var usuario=$('#txtUsuario').val();
+    var email=$('#txtEmail').val();
+    var contrasena=$('#txtContrasena').val();
     
     var url = "http://localhost/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/controller/insertarUsuarios.php"
 

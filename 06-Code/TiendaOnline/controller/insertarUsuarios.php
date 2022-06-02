@@ -7,7 +7,7 @@ $Tipo_Usuario = $_POST['Tipo_Usuario'];
 $email = $_POST['email'];
 $contrasena = $_POST['contrasena'];
 
-$obj=array{
+$obj=array(
     'cedula'=>$cedula,
     'nombre'=>$nombre,
     'apellido'=>$apellido,
@@ -15,10 +15,10 @@ $obj=array{
     'usuario'=>$usuario,
     'email'=>$email,
     'contraseña'=>$contrasena,
-};
-$insert=new MongoDB\Driver\RulWrite();
+);
+$insert=new MongoDB\Driver\BulkWrite();
 $insert->insert($obj);
-$result=$manager->executeRulWrite('TiendaOnline.persons',$insert);
+$result=$manager->executeBulkWrite('TiendaOnline.persons',$insert);
 
 if($result->getinsertedcount()==1){
     echo'Usuario registrado';

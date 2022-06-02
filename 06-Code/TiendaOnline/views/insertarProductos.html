@@ -4,6 +4,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Formulario de Registro de Productos</title>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="css/estilosLogin.css" type="text/css" media="all">
         <script src="http://localhost/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/views/js/RegistrarProductos.js"></script>
     </head>
@@ -19,19 +20,19 @@
             <form class="formularioRegistro" id="formularioRegistro">
                 
                 <h1>Registro Productos</h1><br>
-                <fieldset>             
-                <label>Categoria:</label>
-                    <input type="text" class="txt" id="txtCategoria" required="" name="txtCategoria"><br>
+                        
+                <label>Categoria:</label><br>
+                    <input type="text" class="txt" id="txtCategoria"  name="txtCategoria"><br>
                 <label>Nombre Producto:</label>
-                    <input type="text" class="txt" id="txtProducto" required="" name="txtproducto"><br>
+                    <input type="text" class="txt" id="txtProducto"  name="txtproducto"><br>
                 <label>Talla:</label><br>
-                     <input type="number" class="txt" id="txtTalla" required=""  name="txtTalla"><br>
+                     <input type="number" class="txt" id="txtTalla"   name="txtTalla"><br>
                 <label>Precio:</label><br>
-                    <input type="number" class="txt" id="txtPrecio" required="" name="txtPrecio"><br>
+                    <input type="number" class="txt" id="txtPrecio"  name="txtPrecio"><br>
                 <label>stock:</label><br>
-                    <input type="number" class="txt" id="txtStock" required="" name="txtStock"><br>
-                </fieldset><br>
-                <input type="submit" value="Registrar Productos" class="btn" id="btnRegistrarProducto">
+                    <input type="number" class="txt" id="txtStock" 2 name="txtStock"><br>
+                <br>
+                <button class="btn" onclick="registrarProducto()">REGISTRAR</button>
             </form>
         </div> 
     </body>

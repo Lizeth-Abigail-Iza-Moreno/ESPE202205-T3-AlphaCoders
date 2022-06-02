@@ -9,6 +9,7 @@
     <nav class="menu" id="menu">
             <ul>
                 <li> <a href="visualizarUsuarios.php">Usuarios</a></li>
+                <li> <a href="principal.php.">Productos</a></li>
                 <li><a href="insertarProductos.html">Registrar Nuevos Productos</a></li>
                 <li><a href="login.php">Salir</a></li>                         
             </ul>

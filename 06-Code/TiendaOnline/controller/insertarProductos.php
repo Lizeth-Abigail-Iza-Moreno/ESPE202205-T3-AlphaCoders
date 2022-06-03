@@ -1,10 +1,10 @@
 <?php
 require_once $_SERVER['DOCUMENT_ROOT']."/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/db/db.php";
 $categoria = $_POST['categoria'];
+$NombreProducto = $_POST['Nombre_Producto'];
 $talla = $_POST['Talla'];
 $precio = $_POST['Precio'];
 $stock = $_POST['Stock'];
-$NombreProducto = $_POST['Nombre_Producto'];
 
 $obj=array(
     'categoria'=>$categoria,

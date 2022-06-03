@@ -1,9 +1,9 @@
 function registrarProducto(){
     var categoria =$('#txtCategoria').val();
-    var NombreProducto=$('#txtProducto').val();
-    var talla=$('#txtTalla').val();
-    var precio=$('#txtPrecio').val();
-    var stock=$('#txtstock').val();
+    var NombreProducto =$('#txtProducto').val();
+    var talla =$('#txtTalla').val();
+    var precio =$('#txtPrecio').val();
+    var stock =$('#txtStock').val();
 
     var url="http://localhost/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/controller/insertarProductos.php"
 

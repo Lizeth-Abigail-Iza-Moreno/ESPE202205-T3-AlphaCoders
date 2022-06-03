@@ -2,20 +2,18 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Productos</title>
+        <title>Productos DE VENTA</title>
         <link rel="stylesheet" href="css/estilosLogin.css" type="text/css" media="all">
     </head>
     <body>
     <nav class="menu" id="menu">
             <ul>
                 <li><a href="Productos_cliente.php">Productos</a></li>
-                <li><a href="login.php">Salir</a></li>
-                <div>
-                <h1><center>PRODUCTOS</center</h1><br><br>
-    </div>             
+                <li><a href="login.php">Salir</a></li>            
             </ul>
         </nav>
     </body>
+    <h1><center>PRODUCTOS EN VENTA</center</h1><br><br>
 </html>
 <?php 
    

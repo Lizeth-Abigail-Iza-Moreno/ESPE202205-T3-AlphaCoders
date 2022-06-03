@@ -1,6 +1,6 @@
 function registrarUsuario(){
     var cedula =$('#txtCedula').val();
-    var nombre=$('#txtnombre').val();
+    var nombre=$('#txtNombre').val();
     var apellido=$('#txtApellido').val();
     var Tipo_Usuario=$('#txtTipo_Usuario').val();
     var usuario=$('#txtUsuario').val();
@@ -18,7 +18,8 @@ $.ajax({
     {
         if(response=='registrado'){
             $('anymodal').modal('show');  
-            console.log(response)        
+            console.log(response) 
+            alert('registrado con exito');       
         }else{
             console.log(response)
         alert('error');

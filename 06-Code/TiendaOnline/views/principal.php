@@ -11,7 +11,7 @@
                 <li> <a href="visualizarUsuarios.php">Usuarios</a></li>
                 <li> <a href="principal.php.">Productos</a></li>
                 <li><a href="insertarProductos.html">Registrar Nuevos Productos</a></li>
-                <li><a href="login.php">Salir</a></li>                         
+                <li><a href="http://localhost/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/">Salir</a></li>                         
             </ul>
         </nav>
     </body>

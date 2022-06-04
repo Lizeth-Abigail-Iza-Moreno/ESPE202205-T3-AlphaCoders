@@ -30,10 +30,10 @@
     echo '<div class="row" style="padding-left: 10rem;padding-right: 10rem;">';
     echo '<table cellspacing="10" cellpadding="10" border>';
     echo '<tr>';
-    echo '<th>Nombre</th>';
-    echo '<th>Apellido</th>';
-    echo '<th>Usuario</th>';
-    echo '<th>Tipo Usuario</th>';
+    echo '<th style="color:black;">Nombre</th>';
+    echo '<th style="color:black;">Apellido</th>';
+    echo '<th style="color:black;">Usuario</th>';
+    echo '<th style="color:black;">Tipo Usuario</th>';
     echo '</tr>';
 
     foreach ($cursor as $document) {

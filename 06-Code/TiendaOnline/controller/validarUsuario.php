@@ -14,7 +14,7 @@ $result2 = count($result);
 if($result2 !=0){
     header("location:http://localhost/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/principal.php",TRUE,301);
 }else{
-    echo "El usuario ingresado no existe";
+    alert('El usuario ingresado no existe');
     header("location:http://localhost/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/",TRUE,301);
     exit();
 }

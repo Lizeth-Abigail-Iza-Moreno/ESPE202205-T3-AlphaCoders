@@ -3,7 +3,8 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Inicion de Sesión</title>
-        <link rel="stylesheet" href="./css/estilosLogin.css" type="text/css" media="all">
+        <link rel="stylesheet" href="/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/views/css
+        /estilosLogin.css" type="text/css" media="all">
     </head>
     <body>
         <nav class="menu" id="menu">

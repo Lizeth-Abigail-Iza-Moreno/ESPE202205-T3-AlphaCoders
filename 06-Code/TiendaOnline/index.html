@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Inicion de Sesión</title>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/views/css/estilosLogin.css" type="text/css" media="all">
+        <script src="http://localhost/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/views/js/ValidarUsuario.js"></script>
+    </head>
+    <body>
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="http://localhost/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/">Iniciar Sesión</a></li>
+                <li> <a href="http://localhost/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/views/registrarUsuario.html">Registro de Usuarios</a></li>              
+            </ul>
+        </nav>
+        <div class="cuerpoFormulario" id="cuerpoFormulario">
+            <form class="formularioLogin" id="formularioLogin" onsubmit="event.preventDefault()">
+                <h1>Inicia Sesión en tu cuenta</h1>
+                <div class="texto">
+                    <input type="text" class="txt" id="txtUsuario"  name="txtUsuario" placeholder="Usuario">
+                </div>
+                <div class="texto">
+                    <input type="password" class="txt" id="txtContrasena"  name="txtContrasena" placeholder="Contraseña">
+                </div>
+                <br>
+                <button class="btn" onclick="validarUsuario()">INGRESAR</button>            
+            </form>
+        </div>
+    </body>
+</html>
+

@@ -6,6 +6,6 @@
 	<title>Tienda Online</title>
 </head>
 <body>
-    <?php require_once $_SERVER['DOCUMENT_ROOT']."/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/views/login.php"; ?>
+    <?php require_once $_SERVER['DOCUMENT_ROOT']."/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/login.php"; ?>
 </body>
 </html>

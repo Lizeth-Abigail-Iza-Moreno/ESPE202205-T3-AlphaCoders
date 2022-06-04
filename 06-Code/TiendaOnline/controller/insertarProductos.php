@@ -18,7 +18,7 @@ $insert->insert($obj);
 $result=$manager->executeBulkWrite('TiendaOnline.Productos',$insert);
 
 if($result->getinsertedcount()==1){
-    echo'Producto resgitrado';
+    echo'Producto registrado';
     }else{
     echo'error de Registro';
 }

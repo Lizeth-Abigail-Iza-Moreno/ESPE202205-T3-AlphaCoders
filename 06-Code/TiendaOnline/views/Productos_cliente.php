@@ -12,11 +12,11 @@
                 <li><a href="login.php">Salir</a></li>            
             </ul>
         </nav>
+        
     </body>
-    <h1><center>PRODUCTOS EN VENTA</center</h1><br><br>
 </html>
+<h1><center>PRODUCTOS EN VENTA</center></h1><br>
 <?php 
-   
     require_once $_SERVER['DOCUMENT_ROOT']."/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/db/db.php";
     $filter = [];
     $options = [];
@@ -24,15 +24,14 @@
     $cursor = $manager->executeQuery('TiendaOnline.Productos', $query);
     
     
-    echo '<div class="col-md-12">';
+    echo '<div class="col-md-12"';
     echo '<div class="row" style="padding-left: 10rem;padding-right: 10rem;">';
     echo '<table cellspacing="10" cellpadding="10" border>';
     echo '<tr>';
-    echo '<th>Categoria</th>';
-    echo '<th>Nombre Producto</th>';
-    echo '<th>Talla</th>';
-    echo '<th>Stock</th>';
-    echo '<th>Precio</th>';
+    echo '<th style="color:black;">Categoria</th>';
+    echo '<th style="color:black;">Nombre Producto</th>';
+    echo '<th style="color:black;">Talla</th>';
+    echo '<th style="color:black;">Precio</th>';
     echo '</tr>';
 
     foreach ($cursor as $document) {
@@ -42,7 +41,6 @@
         echo '<td>'.$document['categoria'].'</td>';
         echo '<td>'.$document['Nombre_Producto'].'</td>';
         echo '<td>'.$document['Talla'].'</td>';
-        echo '<td>'.$document['Stock'].'</td>';
         echo '<td>'.$document['Precio'].'</td>';
         echo '</tr>';
     }

@@ -30,11 +30,11 @@
     echo '<div class="row" style="padding-left: 10rem;padding-right: 10rem;">';
     echo '<table cellspacing="10" cellpadding="10" border>';
     echo '<tr>';
-    echo '<th>Categoria</th>';
-    echo '<th>Nombre Producto</th>';
-    echo '<th>Talla</th>';
-    echo '<th>Stock</th>';
-    echo '<th>Precio</th>';
+    echo '<th style="color:black;">Categoria</th>';
+    echo '<th style="color:black;">Nombre Producto</th>';
+    echo '<th style="color:black;">Talla</th>';
+    echo '<th style="color:black;">Stock</th>';
+    echo '<th style="color:black;">Precio</th>';
     echo '</tr>';
 
     foreach ($cursor as $document) {

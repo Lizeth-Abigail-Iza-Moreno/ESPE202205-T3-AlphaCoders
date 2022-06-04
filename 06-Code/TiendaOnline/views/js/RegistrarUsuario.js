@@ -22,7 +22,7 @@ $.ajax({
             alert('registrado con exito');       
         }else{
             console.log(response)
-        alert('Error de registro');
+             alert('Error de registro');
     }
     }
     

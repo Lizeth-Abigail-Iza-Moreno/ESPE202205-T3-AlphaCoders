@@ -4,6 +4,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Registro de los nuevos Productos</title>
         <link rel="stylesheet" href="css/estilosLogin.css" type="text/css" media="all">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="http://localhost/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/views/js/EliminarProductos.js"></script>
     </head>
     <body>
     <nav class="menu" id="menu">
@@ -39,13 +43,15 @@
 
     foreach ($cursor as $document) {
         $document = json_decode(json_encode($document),true);
-            
+        
+        //$document['_id']['$oid']
         echo '<tr>';
         echo '<td>'.$document['categoria'].'</td>';
         echo '<td>'.$document['Nombre_Producto'].'</td>';
         echo '<td>'.$document['Talla'].'</td>';
         echo '<td>'.$document['Stock'].'</td>';
         echo '<td>'.$document['Precio'].'</td>';
+        echo '<td><button onclick="eliminarProducto(\''.$document['_id']['$oid'].'\')"><i class="fa fa-trash"></i></button></td>';
         echo '</tr>';
     }
     echo '</div>';

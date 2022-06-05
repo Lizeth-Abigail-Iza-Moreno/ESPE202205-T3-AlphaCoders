@@ -51,7 +51,7 @@
         echo '<td>'.$document['Talla'].'</td>';
         echo '<td>'.$document['Stock'].'</td>';
         echo '<td>'.$document['Precio'].'</td>';
-        echo '<td><button onclick="eliminarProducto(\''.$document['_id']['$oid'].'\')"><i class="fa fa-trash"></i></button></td>';
+        echo '<td><a onclick="eliminarProducto(\''.$document['_id']['$oid'].'\')"><i class="fa fa-trash"></i></a></td>';
         echo '</tr>';
     }
     echo '</div>';

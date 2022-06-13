@@ -13,9 +13,11 @@ app.use(bodyParser.json())
 app.use("/clientes", EndPoints)
 
 mongoose.connect(
-    "mongodb+srv://administrador:administrador@cluster0.hlyms.mongodb.net/TIENDAONLINE?retryWrites=true&w=majority",
+    //"mongodb+srv://administrador:admi1234@cluster0.hlyms.mongodb.net/ONLINE?retryWrites=true&w=majority",
+    //"mongodb+srv://administrador:administrador@cluster0.hlyms.mongodb.net/ONLINE?retryWrites=true&w=majority",
+    "mongodb+srv://admin:admin@cluster0.b6dil.mongodb.net/CLIENTES?retryWrites=true&w=majority",
     {useNewUrlParser: true},
-    (err, ans) => {
+    (err, res) => {
         err && console.log("Error al conectarse a la base de datos")
         app.listen(portParameter, () => {
             console.log(`server is runnning on port ${portParameter}`)

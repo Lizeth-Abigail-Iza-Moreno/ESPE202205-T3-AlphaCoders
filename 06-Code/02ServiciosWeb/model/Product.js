@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const ClientSchema = new Schema({
+const ProductSchema = new Schema({
     categoria: {type: String},
     Nombre_Producto: {type: String},
     Talla: {type: Number},
@@ -11,4 +11,4 @@ const ClientSchema = new Schema({
     versionKey: false
 })
 
-module.exports = Client = mongoose.model('Client', ClientSchema)
+module.exports = Productos = mongoose.model('Productos', ProductSchema)

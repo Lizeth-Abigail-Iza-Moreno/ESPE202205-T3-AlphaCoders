@@ -27,7 +27,7 @@
     $filter = [];
     $options = [];
     $query = new MongoDB\Driver\Query($filter, $options);
-    $cursor = $manager->executeQuery('TiendaOnline.Productos', $query);
+    $cursor = $manager->executeQuery('TiendaOnline.productos', $query);
     
     
     echo '<div class="col-md-12">';

@@ -15,7 +15,7 @@ $obj=array(
 );
 $insert = new MongoDB\Driver\BulkWrite();
 $insert->insert($obj);
-$result=$manager->executeBulkWrite('TiendaOnline.Productos',$insert);
+$result=$manager->executeBulkWrite('TiendaOnline.productos',$insert);
 
 if($result->getinsertedcount()==1){
     echo'Producto registrado';

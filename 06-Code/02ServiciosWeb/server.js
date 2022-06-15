@@ -2,7 +2,7 @@ const express = require('express')
 const mongoose = require('mongoose')
 const bodyParser = require('body-parser')
 const portParameter = 8081
-//const EndPoints = require('./api/EndPoints')
+const EndPoints = require('./api/EndPoints')
 
 var app = express()
 

@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
 //http://localhost:8081/clientes/uri
-app.use("/Data", EndPoints)
+app.use("/TiendaOnline", EndPoints)
 
 mongoose.connect(
     "mongodb+srv://administrador:administrador@cluster0.hlyms.mongodb.net/TiendaOnline?retryWrites=true&w=majority",

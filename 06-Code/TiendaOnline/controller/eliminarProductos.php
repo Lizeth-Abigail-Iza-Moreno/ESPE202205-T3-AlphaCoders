@@ -4,7 +4,7 @@ $id = $_POST['id'];
 
 $bulk = new MongoDB\Driver\BulkWrite;
 $bulk->delete(['_id' =>new MongoDB\BSON\ObjectID($id)],['limit' => 1]);
-$result=$manager->executeBulkWrite('TiendaOnline.Productos',$bulk);
+$result=$manager->executeBulkWrite('TiendaOnline.productos',$bulk);
 
 if($result->getDeletedCount() === 1){
     echo'Producto eliminado';

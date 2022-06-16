@@ -9,7 +9,7 @@ var app = express()
 app.use(bodyParser.urlencoded({extended: false}))
 app.use(bodyParser.json())
 
-//http://localhost:8081/clientes/uri
+//http://localhost:8081/TiendaOnline/Productos
 app.use("/TiendaOnline", EndPoints)
 
 mongoose.connect(

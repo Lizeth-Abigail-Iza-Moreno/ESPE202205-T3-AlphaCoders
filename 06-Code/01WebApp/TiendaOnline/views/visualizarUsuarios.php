@@ -11,7 +11,7 @@
             <li> <a href="visualizarUsuarios.php">Usuarios</a></li>
             <li> <a href="Principal.php.">Productos</a></li>
                 <li><a href="insertarProductos.html">Registrar Nuevos Productos</a></li>
-                <li><a href="http://localhost/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/">Salir</a></li>           
+                <li><a href="http://localhost/ESPE202205-T3-AlphaCoders/06-Code/01WebApp/TiendaOnline/">Salir</a></li>           
             </ul>
         </nav>
     </body>
@@ -19,7 +19,7 @@
 <h1><center>Usuarios Activos</center</h1><br><br>
 <?php 
    
-    require_once $_SERVER['DOCUMENT_ROOT']."/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/db/db.php";
+    require_once $_SERVER['DOCUMENT_ROOT']."/ESPE202205-T3-AlphaCoders/06-Code/01WebApp/TiendaOnline/db/db.php";
     $filter = [];
     $options = [];
     $query = new MongoDB\Driver\Query($filter, $options);

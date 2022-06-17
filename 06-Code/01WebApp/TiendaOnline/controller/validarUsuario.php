@@ -1,5 +1,5 @@
 <?php
-require_once $_SERVER['DOCUMENT_ROOT']."/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/db/db.php";
+require_once $_SERVER['DOCUMENT_ROOT']."/ESPE202205-T3-AlphaCoders/06-Code/01WebApp/TiendaOnline/db/db.php";
 $usuario = $_POST['usuario'];
 $contrasena = $_POST['contrasena'];
 $query = new MongoDB\Driver\Query(array('username' => $usuario, 'password'=> $contrasena));

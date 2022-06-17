@@ -7,7 +7,7 @@ function registrarUsuario(){
     var email=$('#txtEmail').val();
     var contrasena=$('#txtContrasena').val();
     
-    var url = "http://localhost/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/controller/insertarUsuarios.php"
+    var url = "http://localhost/ESPE202205-T3-AlphaCoders/06-Code/01WebApp/TiendaOnline/controller/insertarUsuarios.php"
 
 $.ajax({
     type:"POST",

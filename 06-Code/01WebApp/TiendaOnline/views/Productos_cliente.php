@@ -9,7 +9,7 @@
     <nav class="menu" id="menu">
             <ul>
                 <li><a href="Productos_cliente.php">Productos</a></li>
-                <li><a href="http://localhost/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/">Salir</a></li>            
+                <li><a href="http://localhost/ESPE202205-T3-AlphaCoders/06-Code/01WebApp/TiendaOnline/">Salir</a></li>            
             </ul>
         </nav>
         
@@ -17,7 +17,7 @@
 </html>
 <h1><center>PRODUCTOS EN VENTA</center></h1><br>
 <?php 
-    require_once $_SERVER['DOCUMENT_ROOT']."/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/db/db.php";
+    require_once $_SERVER['DOCUMENT_ROOT']."/ESPE202205-T3-AlphaCoders/06-Code/01WebApp/TiendaOnline/db/db.php";
     $filter = [];
     $options = [];
     $query = new MongoDB\Driver\Query($filter, $options);

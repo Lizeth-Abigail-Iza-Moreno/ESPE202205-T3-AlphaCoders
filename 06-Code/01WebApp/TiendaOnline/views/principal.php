@@ -7,7 +7,7 @@
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="http://localhost/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/01WebApp/views/js/EliminarProductos.js"></script>
+        <script src="/ESPE202205-T3-AlphaCoders/06-Code/TiendaOnline/01WebApp/views/js/EliminarProductos.js"></script>
     </head>
     <body>
     <nav class="menu" id="menu">
@@ -15,7 +15,7 @@
                 <li> <a href="visualizarUsuarios.php">Usuarios</a></li>
                 <li> <a href="principal.php.">Productos</a></li>
                 <li><a href="insertarProductos.html">Registrar Nuevos Productos</a></li>
-                <li><a href="http://localhost/ESPE202205-T3-AlphaCoders/06-Code/01WebApp/TiendaOnline/">Salir</a></li>                         
+                <li><a href="/ESPE202205-T3-AlphaCoders/06-Code/01WebApp/TiendaOnline/">Salir</a></li>                         
             </ul>
         </nav>
     </body>

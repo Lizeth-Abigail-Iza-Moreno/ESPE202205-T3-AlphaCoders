@@ -5,7 +5,7 @@ function validarUsuario(){
 
 $.ajax({
     type:"POST",
-    url: "http://localhost/ESPE202205-T3-AlphaCoders/06-Code/01WebApp/TiendaOnline/controller/validarUsuario.php",
+    url: "/ESPE202205-T3-AlphaCoders/06-Code/01WebApp/TiendaOnline/controller/validarUsuario.php",
     data: {'usuario':usuario,'contrasena':contrasena},
     success: function (response)
     {
@@ -15,7 +15,7 @@ $.ajax({
            
         }else{
            alert('Welcome')
-           window.location="http://localhost/ESPE202205-T3-AlphaCoders/06-Code/01WebApp/TiendaOnline/views/principal.php";
+           window.location="/ESPE202205-T3-AlphaCoders/06-Code/01WebApp/TiendaOnline/views/principal.php";
      
     }
     }

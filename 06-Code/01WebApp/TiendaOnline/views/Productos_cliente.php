@@ -9,7 +9,7 @@
     <nav class="menu" id="menu">
             <ul>
                 <li><a href="Productos_cliente.php">Productos</a></li>
-                <li><a href="http://localhost/ESPE202205-T3-AlphaCoders/06-Code/01WebApp/TiendaOnline/">Salir</a></li>            
+                <li><a href="/ESPE202205-T3-AlphaCoders/06-Code/01WebApp/TiendaOnline/">Salir</a></li>            
             </ul>
         </nav>
         

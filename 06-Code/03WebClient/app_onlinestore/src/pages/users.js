@@ -1,6 +1,7 @@
 import React, { Component, useEffect, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
+import Menu from '../pages/menu'
 
 export default class Users extends Component {  
     render() {
@@ -48,7 +49,7 @@ export default class Users extends Component {
                   </div>
                   <br></br>
                   <div class="row justify-content-center">
-                    <div class="form-group col-sm-6"> <button onClick={() => this.putStudent()} type="submit" class="btn-block btn-primary">Registrar</button> </div>
+                    <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-primary">Registrar</button> </div>
                   </div>
                 </form>
               </div>

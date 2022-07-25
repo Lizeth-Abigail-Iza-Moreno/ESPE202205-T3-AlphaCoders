@@ -9,7 +9,7 @@ export default class Users extends Component {
         <div class="container-fluid px-1 py-5 mx-auto">
           <div class="row d-flex justify-content-center">
             <div class="col-xl-6 col-lg-8 ">
-              <h3>Iniciar sesion en su cuenta</h3>
+              <h3>Iniciar sesión en su cuenta</h3>
               <div class="card">
 
                 <form class="form-card" >
@@ -25,7 +25,7 @@ export default class Users extends Component {
                   </div>
                   <br></br>
                   <div class="row justify-content-center">
-                    <div class="form-group col-sm-6"> <button onClick={() => this.putStudent()} type="submit" class="btn-block btn-primary">Ingresar</button> </div>
+                    <div class="form-group col-sm-6"> <button type="submit" class="btn-block btn-primary">Ingresar</button> </div>
                   </div>
                 </form>
               </div>

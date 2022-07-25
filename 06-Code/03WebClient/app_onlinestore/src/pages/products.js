@@ -1,88 +1,53 @@
-//import '../css/App.css'
-import 'styled-components'
-import React, { useState, useEffect } from 'react';
-import DataTable, { createTheme } from 'react-data-table-component';
+import React, { Component, useEffect, useState } from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
 
-const Products = () => {
-  //1 - Configurar los hooks
-  const [products, setProducts] = useState([])
+export default class Users extends Component {  
+    render() {
+    return (
+      <div>
+        <div class="container-fluid px-1 py-5 mx-auto">
+          <div class="row d-flex justify-content-center">
+            <div class="col-xl-4 col-lg-8 ">
+              <h3>REGISTRO PRODUCTOS</h3>
+              <div class="card">
 
-  //2 - Función para mostrar los datos con fetch
-  const URL = 'http://35.173.221.196:3003/onlinestore/products'
-  const showData = async () => {
-    const response = await fetch(URL)
-    const data = await response.json()
-    console.log(data)
-    setProducts(data)
+                <form class="form-card" >
+                  <div class="row justify-content-center">
+                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">
+                      Categoria<span class="text-danger"> *</span></label> <input type="text" id="txtCedula" name="txtCedula" onChange={this.handleChange} />
+                    </div>             
+                    <div class="row justify-content-center">
+                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">
+                      Nombre Producto<span class="text-danger"> *</span></label> <input type="text" id="txtNombre" name="txtNombre"  onChange={this.handleChange} /> 
+                    </div>
+                    </div>
+                    <div class="row justify-content-center">
+                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">
+                      Talla<span class="text-danger"> *</span></label> <input type="text" id="txtApellido" name="txtApellido"  onChange={this.handleChange} /> 
+                      </div>
+                      </div>
+                    <div class="row justify-content-center">
+                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">
+                      Precio<span class="text-danger"> *</span></label> <input type="text" id="txtTipo" name="txtTipo"  onChange={this.handleChange} /> 
+                      </div>
+                      </div>
+                      <div class="row justify-content-center">
+                    <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">
+                    Stock:<span class="text-danger"> *</span></label> <input type="text" id="txtUsuario" name="txtUsuario" onChange={this.handleChange} />
+                    </div>
+                  </div>
+                  </div>
+                  <br></br>
+                  <div class="row justify-content-center">
+                    <div class="form-group col-sm-6"> <button onClick={() => this.putStudent()} type="submit" class="btn-block btn-primary">Registrar</button> </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    )
   }
-
-  useEffect(() => {
-    showData()
-  }, [])
-
-  //3 - Configuramos las columns para Datatable
-  const columns = [
-    {
-      name: 'ID',
-      selector: row => row.id
-    },
-    {
-      name: 'Categoria',
-      selector: row => row.category
-    },
-    {
-      name: 'Nombre del producto',
-      selector: row => row.product_Name
-    },
-    {
-      name: 'Talla',
-      selector: row => row.size
-    },
-    {
-      name: 'precio',
-      selector: row => row.price
-    },
-    {
-      name: 'Stock',
-      selector: row => row.stock
-    },
-
-  ]
-
-  //personalizar temas
-   createTheme('custom', {
-    text: {
-      primary: '#268bd2',
-      secondary: '#2aa198',
-    },
-    background: {
-      default: '#002b36',
-    },
-    context: {
-      background: '#cb4b16',
-      text: '#FFFFFF',
-    },
-    divider: {
-      default: '#073642',
-    },
-    action: {
-      button: 'rgba(0,0,0,.54)',
-      hover: 'rgba(0,0,0,.08)',
-      disabled: 'rgba(0,0,0,.12)',
-    },
-  }, 'dark');
-
-
-  //4 - Mostramos la data en DataTable
-  return (
-    <div className="App">
-      <h1>Tabla de Productos Registrados</h1>
-      <DataTable
-        columns={columns}
-        data={products}
-        theme='custom' //habilitar esta linea y descomentar createTheme()
-        pagination />
-    </div>
-  );
 }
-export default Products;

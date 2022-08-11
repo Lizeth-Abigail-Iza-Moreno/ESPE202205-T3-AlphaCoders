@@ -3,11 +3,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
 import Menu from '../pages/menu'
 
-export default class Users extends Component {
-  render() {
+export default class Users extends Component {  
+    render() {
     return (
       <div>
-        <Menu />
+        <Menu/>
         <div class="container-fluid px-1 py-5 mx-auto">
           <div class="row d-flex justify-content-center">
             <div class="col-xl-6 col-lg-8 ">
@@ -15,7 +15,7 @@ export default class Users extends Component {
               <div class="card">
 
                 <form class="form-card" >
-                  <div class="row justify-content-center">
+                      <div class="row justify-content-center">
                     <div class="form-group col-sm-6 flex-column d-flex"> <label class="form-control-label px-3">
                       Usuario<span class="text-danger"> *</span></label> <input type="text" id="txtUsuario" name="txtUsuario" />
                     </div>

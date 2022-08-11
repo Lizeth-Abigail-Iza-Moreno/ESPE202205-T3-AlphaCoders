@@ -33,13 +33,10 @@ class menu extends Component {
             <li className="nav-item">
               <a className="nav-link" onClick={() => this.products()} href="#">Registrar Productos</a>
             </li>
-
             <li className="nav-item">
               <button className='btn btn-primary' onClick={() => this.cerrarSesion()}>Cerrar Sesión</button>
             </li>
-
           </ul>
-
         </div>
       </nav>
     )

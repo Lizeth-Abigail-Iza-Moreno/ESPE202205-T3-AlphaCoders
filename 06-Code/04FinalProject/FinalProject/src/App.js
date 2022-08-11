@@ -190,9 +190,6 @@ class Product extends Component {
           <strong><p>Add product</p></strong>
         </Button>
       </div>
-
-
-
     );
   }
 }

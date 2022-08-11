@@ -32,7 +32,7 @@ class Product extends Component {
   }
 
   callPost = async () => {
-    delete this.state.form._id;
+    delete this.state.form.id;
     await axios.post(URI, this.state.form).then(response => {
       this.modalInsert();
       this.callGet();
@@ -96,6 +96,7 @@ class Product extends Component {
         <div class="table-responsive-md">
           <table className="table ">
             <thead>
+            <h1><center>Registro de productos</center></h1><br></br>
               <tr>
                 <th>ID</th>
                 <th>Category</th>
@@ -119,7 +120,7 @@ class Product extends Component {
 
                     <td>
                       <button className="btn btn-primary" onClick={() => { this.selectClient(product); this.modalInsert() }}><FontAwesomeIcon icon={faEdit} /></button>
-                      {"   "}
+                      {" "}
                       <button className="btn btn-danger" onClick={() => { this.selectClient(product); this.setState({ modalDelete: true }) }}><FontAwesomeIcon icon={faTrashAlt} /></button>
                     </td>
                   </tr>
@@ -137,21 +138,21 @@ class Product extends Component {
 
             <div className="form-group">
               <label htmlFor="_id">ID</label>
-              <input className="form-control" type="text" name="id" id="id" readOnly onChange={this.captureData} value={form ? form._id : this.state.data.length + 1} />
+              <input className="form-control" type="text" name="_id" id="_id" readOnly onChange={this.captureData} value={form ? form._id : this.state.data.length + 1} />
               <br />
-              <label htmlFor="Name">Category</label>
+              <label htmlFor="category">Category</label>
               <input className="form-control" type="text" name="category" id="category" onChange={this.captureData} value={form ? form.category : ''} />
               <br />
-              <label htmlFor="LastName">Product Name</label>
+              <label htmlFor="product_Name">Product Name</label>
               <input className="form-control" type="text" name="product_Name" id="product_Name" onChange={this.captureData} value={form ? form.product_Name : ''} />
               <br />
-              <label htmlFor="age">Price</label>
+              <label htmlFor="price">Price</label>
               <input className="form-control" type="text" name="price" id="price" onChange={this.captureData} value={form ? form.price : ''} />
               <br />
-              <label htmlFor="subTotal">Size</label>
+              <label htmlFor="size">Size</label>
               <input className="form-control" type="text" name="size" id="size" onChange={this.captureData} value={form ? form.size : ''} />
               <br />
-              <label htmlFor="age">Stock</label>
+              <label htmlFor="Stock">Stock</label>
               <input className="form-control" type="text" name="stock" id="stock" onChange={this.captureData} value={form ? form.stock : ''} />
               <br />
             </div>
@@ -172,7 +173,7 @@ class Product extends Component {
 
         <Modal isOpen={this.state.modalDelete}>
           <ModalBody>
-            Estás seguro que deseas eliminar el product: {form && form._id}
+            Estás seguro que deseas eliminar el product: {form && form.id}
           </ModalBody>
           <ModalFooter>
             <button className="btn btn-danger" onClick={() => this.callDelete()}>Sí</button>

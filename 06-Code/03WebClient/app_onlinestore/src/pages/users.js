@@ -1,6 +1,7 @@
 import React, { Component, useEffect, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import axios from 'axios';
+import PersonsSearch from '../components/PersonsSearch';
 import Menu from '../pages/menu'
 
 export default class Users extends Component {
@@ -8,6 +9,7 @@ export default class Users extends Component {
     return (
       <div>
         <Menu />
+        <PersonsSearch/>
         <div class="container-fluid px-1 py-5 mx-auto">
           <div class="row d-flex justify-content-center">
             <div class="col-xl-6 col-lg-8 ">

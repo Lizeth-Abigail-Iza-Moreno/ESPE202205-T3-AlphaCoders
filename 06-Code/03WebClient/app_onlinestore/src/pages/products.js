@@ -9,7 +9,7 @@ export default class Users extends Component {
     return (
       <div>
         <Menu/>
-        <ProductsSearch />
+        <ProductsSearch/>
         <div class="container-fluid px-1 py-5 mx-auto">
           <div class="row d-flex justify-content-center">
             <div class="col-xl-4 col-lg-8 ">

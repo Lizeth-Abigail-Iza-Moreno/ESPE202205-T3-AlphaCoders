@@ -12,7 +12,6 @@ function App() {
         <Route exact path='/menu' element={<Menu/>}/>
         <Route exact path='/users' element={<Users/>}/> 
         <Route exact path='/products' element={<Products/>}/> 
-        
       </Routes>
     </Router>
   );

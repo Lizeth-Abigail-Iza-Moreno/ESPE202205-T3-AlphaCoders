@@ -64,6 +64,7 @@ class Product extends Component {
       tipoModal: 'actualizar',
       form: {
         _id: product._id,
+        id: product.id,
         category: product.category,
         product_Name: product.product_Name,
         price: product.price,
@@ -96,8 +97,9 @@ class Product extends Component {
         <div class="table-responsive-md">
           <table className="table ">
             <thead>
-            <h1><center>Registro de productos</center></h1><br></br>
+            <h1><center>Productos Registrados</center></h1><br></br>
               <tr>
+                <th>ID</th>
                 <th>ID</th>
                 <th>Category</th>
                 <th>Product Name</th>
@@ -112,6 +114,7 @@ class Product extends Component {
                 return (
                   <tr>
                     <td>{product._id}</td>
+                    <td>{product.id}</td>
                     <td>{product.category}</td>
                     <td>{product.product_Name}</td>
                     <td>{product.price}</td>
@@ -190,9 +193,6 @@ class Product extends Component {
           <strong><p>Add product</p></strong>
         </Button>
       </div>
-
-
-
     );
   }
 }
